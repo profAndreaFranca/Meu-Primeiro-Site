@@ -1,0 +1,23 @@
+h1{
+    color: blueviolet;
+    font-size: 60px;
+    font-family: 'comic sans ms';
+}
+
+h2{
+    background-color: aquamarine;
+    color: blueviolet;
+    text-align: center;
+}
+
+a{
+    text-decoration:line-through;
+}
+
+p{
+
+}
+
+small{
+    background-color: blueviolet;
+}
