@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Primeiro Site</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        h1{
-            color: brown;
-        }
-        h2{
-            background-color: aquamarine;
-            color: blueviolet;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1 style="color: blueviolet;">CurioSite</h1>
-        <nav>
-            <a href="#explorar">Explorar</a>
-            <a href="#como-funciona">Como Funciona</a>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <h2>Meu Primeiro Site de Curiosidades</h2>
-            <p>Escolha um tema que você ama e compartilhe descobertas!</p>
-        </section>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Menu de Navegação -->
+    <nav>
+      <div>
+        <span>CurioSite</span>
+        <a href="#explorar">Explorar</a>
+        <a href="#como-funciona">Como Funciona</a>
+      </div>
+      <div>
+        <button>🌙</button>
+        <button>+ Nova Curiosidade</button>
+      </div>
+    </nav>
 
+    <!-- header -->
+    <header>
+      <div id="left-header-container">
+        <h1>Meu primeiro site de curiosidades</h1>
+        <p>
+          HTML = estrutura • CSS = visual • JS = comportamento. Escolha um tema
+          que você ama (animes, mangás, animais, espaço…) e compartilhe
+          descobertas! 🎯
+        </p>
+      </div>
+
+      <div id="right-header-container">
+        <h3>Como cada parte funciona?</h3>
+
+        <ul>
+          <li>
+            <strong>HTML</strong>  é o esqueleto: títulos, parágrafos, imagens e links (as
+            "peças").
+          </li>
+          <li>
+           <strong>CSS</strong>  é a roupa: cores, tamanhos, fontes e espaçamentos (o "estilo").
+          </li>
+          <li>
+           <strong>JavaScript</strong>  é o cérebro: cliques, buscas, filtros e contadores (as
+            "ações").
+          </li>
+        </ul>
+
+        <hr>
+
+        <p>
+           <strong>Dica de design:</strong>  escolha uma paleta com 2–3 cores e use bem o espaço em branco. Títulos curtos, imagens em boa resolução e textos objetivos deixam tudo mais bonito e legível.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero"></section>
     </main>
     <footer>
-        <small>Feito com HTML e CSS - Aula 1</small>
+      <small>Feito com HTML e CSS - Aula 1</small>
     </footer>
-</body>
+  </body>
 </html>
-

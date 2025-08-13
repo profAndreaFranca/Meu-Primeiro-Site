@@ -1,23 +1,29 @@
-h1{
-    color: blueviolet;
-    font-size: 60px;
-    font-family: 'comic sans ms';
+body{
+    background-color: rgb(231, 214, 250);
+    padding: 0;
+    margin: 0;
 }
 
-h2{
-    background-color: aquamarine;
-    color: blueviolet;
-    text-align: center;
+nav{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0;
 }
 
-a{
-    text-decoration:line-through;
+header{
+    display: flex;
+    margin-top: 40px;
+    padding: 20px;
+
 }
 
-p{
-
-}
-
-small{
-    background-color: blueviolet;
+#right-header-container{
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid rgb(229, 196, 247);
+    border-radius: 15px;
 }
