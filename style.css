@@ -58,8 +58,8 @@ header{
     border: 1px solid rgb(229, 196, 247);
     border-radius: 15px;
     box-shadow: 11px 30px 81px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 11px 30px 81px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 11px 30px 81px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 11px 30px 81px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 30px 81px 0px rgba(0,0,0,0.75);
 }
 
 #hero{
