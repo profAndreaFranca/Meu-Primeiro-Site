@@ -6,75 +6,144 @@
     <title>Meu Primeiro Site</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Menu de Navegação -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#"><strong>Curio</strong>Site</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#explorar">Explorar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#como-funciona">Como Funciona</a>
-        </li>
-      </ul>
-      <div class="d-flex gap-2">
-          <button type="button" class="btn btn-outline-dark">🌙</button>
-          <button type="button" class="btn btn-primary">+ Nova Curiosidade</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"><strong>Curio</strong>Site</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#explorar">Explorar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#como-funciona">Como Funciona</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-outline-dark">🌙</button>
+            <button type="button" class="btn btn-primary">
+              + Nova Curiosidade
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
     <!-- header -->
-    <header>
-      <div id="left-header-container">
-        <h1>Meu primeiro site de curiosidades</h1>
-        <p>
-          HTML = estrutura • CSS = visual • JS = comportamento. Escolha um tema
-          que você ama (animes, mangás, animais, espaço…) e compartilhe
-          descobertas! 🎯
-        </p>
-      </div>
+    <header class="hero d-flex mt-0">
+      <div class="container row m-auto">
+        <div id="left-header-container" class="col-8">
+          <h1>Meu primeiro site de curiosidades</h1>
+          <p>
+            HTML = estrutura • CSS = visual • JS = comportamento. Escolha um
+            tema que você ama (animes, mangás, animais, espaço…) e compartilhe
+            descobertas! 🎯
+          </p>
+        </div>
 
-      <div id="right-header-container">
-        <h3>Como cada parte funciona?</h3>
+        <div id="right-header-container" class="col-4">
+          <h3>Como cada parte funciona?</h3>
 
-        <ul>
-          <li>
-            <strong>HTML</strong>  é o esqueleto: títulos, parágrafos, imagens e links (as
-            "peças").
-          </li>
-          <li>
-           <strong>CSS</strong>  é a roupa: cores, tamanhos, fontes e espaçamentos (o "estilo").
-          </li>
-          <li>
-           <strong>JavaScript</strong>  é o cérebro: cliques, buscas, filtros e contadores (as
-            "ações").
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <strong>HTML</strong> é o esqueleto: títulos, parágrafos, imagens
+              e links (as "peças").
+            </li>
+            <li>
+              <strong>CSS</strong> é a roupa: cores, tamanhos, fontes e
+              espaçamentos (o "estilo").
+            </li>
+            <li>
+              <strong>JavaScript</strong> é o cérebro: cliques, buscas, filtros
+              e contadores (as "ações").
+            </li>
+          </ul>
 
-        <hr>
+          <hr />
 
-        <p>
-           <strong>Dica de design:</strong>  escolha uma paleta com 2–3 cores e use bem o espaço em branco. Títulos curtos, imagens em boa resolução e textos objetivos deixam tudo mais bonito e legível.
-        </p>
+          <p>
+            <strong>Dica de design:</strong> escolha uma paleta com 2–3 cores e
+            use bem o espaço em branco. Títulos curtos, imagens em boa resolução
+            e textos objetivos deixam tudo mais bonito e legível.
+          </p>
+        </div>
       </div>
     </header>
 
-    <main>
-      <section id="hero"></section>
+    <hr>
+
+    <main class="container m-auto">
+      <section id="hero" class="container d-flex row m-auto">
+
+        <div class="card col-3">
+          <img src="./assets/miika-laaksonen-nUL9aPgGvgM-unsplash.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Mangá lê-se da direita para a esquerda</h5>
+            <p class="card-text">
+              A ordem de leitura tradicional japonesa começa pelo “final” para preservar o layout e a intenção do autor.
+            </p>
+            <div class="d-flex justify-content-between ">
+              <button type="button" class="btn btn-outline-dark">❤</button>
+              <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="card col-3">
+          <img src="./assets/miika-laaksonen-nUL9aPgGvgM-unsplash.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Mangá lê-se da direita para a esquerda</h5>
+            <p class="card-text">
+              A ordem de leitura tradicional japonesa começa pelo “final” para preservar o layout e a intenção do autor.
+            </p>
+            <div class="d-flex justify-content-between ">
+              <button type="button" class="btn btn-outline-dark">❤</button>
+              <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-3" >
+          <img src="./assets/miika-laaksonen-nUL9aPgGvgM-unsplash.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Mangá lê-se da direita para a esquerda</h5>
+            <p class="card-text">
+              A ordem de leitura tradicional japonesa começa pelo “final” para preservar o layout e a intenção do autor.
+            </p>
+            <div class="d-flex justify-content-between ">
+              <button type="button" class="btn btn-outline-dark">❤</button>
+              <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
     </main>
+
     <footer>
       <small>Feito com HTML e CSS - Aula 1</small>
     </footer>

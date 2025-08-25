@@ -1,8 +1,29 @@
+:root{
+      /* Paleta default (claro) */
+  --brand: #7c3aed;        /* roxo CodeMinds vibe */
+  --brand-2: #f97316;      /* laranja de destaque */
+  --bg: #f7f7fb;
+  --panel: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+}
+
+
+[data-theme="dark"]{
+  /* Paleta escura */
+  --bg: #0b1020;
+  --panel: #121833;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
+
 body{
-    background-color: rgb(231, 214, 250);
+    
     padding: 0;
     margin: 0;
 }
+
+
 
 nav{
     background-color: white;
@@ -13,17 +34,31 @@ nav{
     margin: 0;
 }
 
+.navbar-brand strong{
+    color:var(--brand)
+}
+
 header{
-    display: flex;
+    /* display: flex; */
     margin-top: 40px;
     padding: 20px;
 
 }
 
+.hero{
+    background: radial-gradient(1200px 400px at 20% 10%, rgba(124,58,237,.18), transparent 60% ),
+                radial-gradient(800px 300px at 80% 0%,  rgba(249,115,22,.15), transparent 60% );
+    padding: 4rem 1rem 2rem;          
+}
+
 #right-header-container{
     background-color: white;
-    width: 500px;
+    /* width: 500px; */
     padding: 10px;
     border: 1px solid rgb(229, 196, 247);
     border-radius: 15px;
+}
+
+#hero{
+    gap:5rem;
 }
