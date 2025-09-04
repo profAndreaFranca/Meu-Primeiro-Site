@@ -1,34 +1,11 @@
-const INITIAL_DATA = [
-  {
-    id: 'c1',
-    title: 'Gatos ronronam para se curar',
-    text: 'A vibração do ronronar (25–150 Hz) pode estimular a regeneração óssea e reduzir estresse — não é só fofura!',
-    image: 'https://images.unsplash.com/photo-1511044568932-338cba0ad803?q=80&w=1200&auto=format&fit=crop',
-    category: 'Animais',
-    tags: ['gatos','biologia','frequências']
-  },
-  {
-    id: 'c2',
-    title: 'Animes e FPS: por que parecem mais rápidos?',
-    text: 'Alguns animes usam 12 fps (animados “on twos”), mas efeitos e cortes dinâmicos criam sensação de velocidade maior.',
-    image: 'https://images.unsplash.com/photo-1625080903503-00fef6c5f3b2?q=80&w=1200&auto=format&fit=crop',
-    category: 'Animes',
-    tags: ['fps','animação','estilo']
-  },
-  {
-    id: 'c3',
-    title: 'Buracos negros não “sugam” tudo',
-    text: 'Se o Sol virasse um buraco negro com a mesma massa, a Terra continuaria orbitando — só ficaria mais escuro.',
-    image: 'https://images.unsplash.com/photo-1447433819943-74a20887a81e?q=80&w=1200&auto=format&fit=crop',
-    category: 'Astronomia',
-    tags: ['gravidade','espaço','órbitas']
-  },
-  {
-    id: 'c4',
-    title: 'Mangá lê-se da direita para a esquerda',
-    text: 'A ordem de leitura tradicional japonesa começa pelo “final” para preservar o layout e a intenção do autor.',
-    image: 'https://images.unsplash.com/photo-1553729784-e91953dec042?q=80&w=1200&auto=format&fit=crop',
-    category: 'Mangá',
-    tags: ['leitura','japão','cultura']
-  }
-];
+function openDetails(item){
+  document.getElementById('modalTitle').textContent = item.title;
+  document.getElementById('modalText').textContent = item.text;
+  const img = document.getElementById('modalImage');
+  img.src = item.image; img.alt = item.title;
+  const tags = document.getElementById('modalTags');
+  tags.innerHTML = (item.tags||[]).map(t=>`<span class="badge text-bg-secondary">#${t}</span>`).join(' ');
+
+  const modal = new bootstrap.Modal(document.getElementById('modalDetails'));
+  modal.show();
+}
